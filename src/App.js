@@ -13,7 +13,7 @@ const [cartIsShown, setCartIsShown]=useState(false);
 
   return (
     <CartProvider>
-      {cartIsShown && <div>Cart...</div>}
+      {cartIsShown && <Cart  onClosee={hideCartHandler}/>}
       <Header onShowCart={showCartHandler}/>
       <main>
         <Meals />
